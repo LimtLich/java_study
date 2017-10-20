@@ -13,13 +13,13 @@ class person{
     }
 }
 
-class Student extends person{
-    public Student(){}
+class Studentx extends person{
+    public Studentx(){}
 }
 
 public class 继承 {
     public static void main(String[] args){
-        Student s = new Student();
+        Studentx s = new Studentx();
         s.eat();
     }
 }

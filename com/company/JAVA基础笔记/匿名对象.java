@@ -8,14 +8,14 @@ package com.company.JAVA基础笔记;
 * */
 
 //创建Student类
-class Student{
+class Studentxx{
     public void show(){
         System.out.println("Carry on!");
     }
 }
 
 class StudentDemo{
-    public void metho(Student s){
+    public void metho(Studentxx s){
         s.show();
     }
 }
@@ -24,16 +24,16 @@ public class 匿名对象 {
 
     public static void main(String[] args){
         //非匿名调用
-        Student s = new Student();
+        Studentxx s = new Studentxx();
         s.show();
         System.out.println("----------------------------------");
         //匿名调用
-        new Student().show();
-        new Student().show();//重新创建新对象，开辟新的内存空间，不适合多次调用
+        new Studentxx().show();
+        new Studentxx().show();//重新创建新对象，开辟新的内存空间，不适合多次调用
         System.out.println("----------------------------------");
         StudentDemo d = new StudentDemo();
-        d.metho(new Student());
+        d.metho(new Studentxx());
         System.out.println("----------------------------------");
-        new StudentDemo().metho(new Student());
+        new StudentDemo().metho(new Studentxx());
     }
 }

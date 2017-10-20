@@ -15,7 +15,7 @@ package com.company.JAVA基础笔记2;
 *    由于成员方法存在方法重写，所以它运行看右边
 * */
 
-class fu1{
+class fu11{
     int num1 = 10;
     public void show(){
         System.out.println("show of fu");
@@ -25,7 +25,7 @@ class fu1{
     }
 }
 
-class zi1 extends fu1{
+class zi11 extends fu11{
     int num1 = 100;
     public void show(){
         System.out.println("show of zi");
@@ -37,7 +37,7 @@ class zi1 extends fu1{
 
 public class 多态  {
     public static void main(String[] args){
-        fu1 f = new zi1();
+        fu11 f = new zi11();
         System.out.println(f.num1);
         f.show();
         f.show1();
