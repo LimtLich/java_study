@@ -1,7 +1,7 @@
 package com.company.JAVA基础笔记4;
 
-class Math {
-    //int数组拼接成字符串
+class MathTools {
+    //int数组拼接成字符串(性能较差，后续通过StringBuffer改善)
     public static String arrayToString(int[] arr) {
         String result = "";
         result += "[";
@@ -61,17 +61,17 @@ public class String类练习 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3};
         int[] arr2 = {2, 4, 6, 8, 10};
-        System.out.println(Math.arrayToString(arr));
-        System.out.println(Math.arrayToString(arr2));
+        System.out.println(MathTools.arrayToString(arr));
+        System.out.println(MathTools.arrayToString(arr2));
         System.out.println("---------------------------------");
         String a = "ABN";
         String b = "!OGNIM";
-        System.out.println(Math.reverse1(a));
-        System.out.println(Math.reverse2(b));
+        System.out.println(MathTools.reverse1(a));
+        System.out.println(MathTools.reverse2(b));
         System.out.println("---------------------------------");
         String s1 = "abcJAVAcbaJAVAaaaJAVA";
         String s2 = "afadfadfanbasasfafnbaasdasfnbaasdasdasdnbanbanbaqeqerqernba";
-        System.out.println(Math.getCount(s1, "JAVA"));
-        System.out.println(Math.getCount(s2,"nba"));
+        System.out.println(MathTools.getCount(s1, "JAVA"));
+        System.out.println(MathTools.getCount(s2,"nba"));
     }
 }
